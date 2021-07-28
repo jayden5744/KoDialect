@@ -4,7 +4,7 @@ import pandas as pd
 from tqdm import tqdm
 
 
-def preprocessing(sentence: str, lang="gy"):
+def preprocessing(sentence: str, lang="gy") -> str:
     if lang in ["gang", "jeon"]:
         try:
             sentence = sentence.split("\t")[1].strip()
